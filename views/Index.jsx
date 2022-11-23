@@ -17,7 +17,7 @@ class Index extends React.Component {
                         return (
                             // <li key =  {i}> is making "Warning: Each child in a list should have a unique "key" prop." go away 
                             <ul key = {i}>
-                                <a href={`/pokemon/${i}`}>{eachMon.name[0].toUpperCase() + eachMon.name.slice(1)}</a>
+                                <a href={`/pokemon/${eachMon._id}`}>{eachMon.name[0].toUpperCase() + eachMon.name.slice(1)}</a>
                                 {/* <a style={{color: "red"}} href={`/fruits/${fruit._id}`}>{fruit.name} */}
                                 {/* </a> */}
                                 

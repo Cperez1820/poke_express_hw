@@ -2,13 +2,13 @@ const React = require("react");
 
 class Show extends React.Component {
   render() {
-    const {name,img} = this.props
+    const {name,img} = this.props.pokemon
     return (
       <div>
-        <h1>Pokemon Show Page</h1>
+        <h1>Gotta catch 'Em All</h1>
         <h2>The Pokemon is {name}</h2>
         <img src={img + ".jpg"}></img>
-        <a href="/pokemon">BACK</a>
+        <a href={`/pokemon/`}>BACK</a>
         <div>
           
           
